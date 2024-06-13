@@ -21,6 +21,14 @@
                   <div class="font-weight-bold mb-1">{{meg?.users?.full_name}}</div>
                   {{meg?.text}}
                 </div>
+                <div class="dropdown">
+                  <span class="" (click)="openDropDown(meg)" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ...
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -42,3 +50,7 @@
     </div>
   </div>
 </main>
+
+
+<!-- modal -->
+<app-delete-modal></app-delete-modal>
