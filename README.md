@@ -1,2 +1,2 @@
 # Chat-ng
-chat in real time 
+chat in real-time 
